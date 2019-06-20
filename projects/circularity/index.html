@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>Operation Spark || Motion Poem</title>
+        <meta name="description" content="Operation Spark Motion Poem">
+        <meta name="author" content="operationspark.org">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- all core CreateJS and 3rd party libraries are listed here: -->
+        <script src="bower_components/lodash/lodash.min.js"></script>
+        <script src="bower_components/easeljs/lib/easeljs-0.8.2.min.js"></script>
+        <script src="bower_components/opspark-draw/draw.js"></script>
+        <script src="bower_components/racket/racket.js"></script>
+
+        <!-- our app javascript code -->
+        <script src="js/opspark.js"></script>
+        <script src="js/init.js"></script>
+        
+        <style type="text/css">
+            /*override default styles here*/
+           body{
+               background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-vrRFYm3m03gs0aYG0DB6cIPECMbY9q_9yHrN0A71AEmyrqTFApxwaAI:https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/88c567e1-f6c0-491a-8a12-b8872a8fd7dc/dc9azjk-30bcaa5c-e321-4442-b0f2-9c6f830ac379.png%3Ftoken%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg4YzU2N2UxLWY2YzAtNDkxYS04YTEyLWI4ODcyYThmZDdkY1wvZGM5YXpqay0zMGJjYWE1Yy1lMzIxLTQ0NDItYjBmMi05YzZmODMwYWMzNzkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.qooRX_zTrmeB31z9PquRieam2n2E6rxXTnvPLg-3DWI");
+               padding: 10px;
+               height: 150px;
+               width:300px;
+           }
+        </style>
+    </head>
+    <body>
+        <div>
+            <canvas id="canvas" width="500" height="500"></canvas>
+        </div>
+        <script id="motion-poem">
+            (function(){
+                init(window);
+                window.opspark.makeGame();
+            })();
+        </script>
+    </body>
+
+</html>
